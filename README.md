@@ -177,7 +177,11 @@ To make these files work, the following corrections were made:
 1. A declaration and an instantiation of the PRISM module was created inside the Nexys2_top_shell.vhd file.  
 2. Clockbus_Sig(23) as the PRISM clock for the instantiation.  
 3. btn(3) was the reset.  Not btn(3) was used instead of just btn(3), because the reset is an active low!!
-4. 
+4. the control bus was commented out in the instantiation. 
+5. switch(3 downto 0) was used for Input_0, and switch(7 downto 4) was used as Input_1 in the instantiation.  
+6. input ports 2 and 3 set to “0000” (ex. Input_2 => "0000",) in the instantiation.  
+7. the following were also set in the instantiation:  Output_0 => nibble3, Output_1 => nibble2, Output_2 => nibble1, Output_3 => nibble0
+
 
 
 The implementation for the PRISM Program 1 Simulation can be seen below.  This is the program described above being run on an FPGA.  
