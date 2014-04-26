@@ -102,6 +102,18 @@ Execute3:   The address is changed to 03, where the output will put the accumula
 
 
 
+##145 - 175ns
+
+![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/InitialProgramSimulation05.PNG "Inital Program Simulation05")
+
+
+*JumpExecute4:*  
+
+*Fetch1:*
+
+*Decode1:*
+
+
 
 
 
