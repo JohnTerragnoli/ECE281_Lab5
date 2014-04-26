@@ -150,7 +150,7 @@ This screenshot is almost the same as the one at 105-145ns.  The only difference
 
 *Jump Execute6:* At this line, the jmpSel signal remains low.  This means that the program will not jump to the location stored in MarHi and MarLo, but instead will just increment the PC by 1, as with the other instructions. It will now move onto the instruction at line 09.   This is just shown again for convenience.  
 
-*Fetch7:* This is when then next line in the code is begun.  Unfortunately, the simulation ends at this point.  However, if it were to continue, the command at 09 is a jump command, which jumps to line 9 unconditionally.  This would occur indefinietlly, or until the reset button was hit.  
+*Fetch7:* This is when then next line in the code is begun.  Unfortunately, the simulation ends at this point.  However, if it were to continue, the command at 09 is a jump command, which jumps to line 9 unconditionally.  This would occur indefinietlly, or until the reset button is hit.  If the reset button is hit, then the program will jump to the beginning again.  The reset button was never hit in this simulation.  
 
 
 
@@ -182,6 +182,8 @@ To make these files work, the following corrections were made:
 6. input ports 2 and 3 set to “0000” (ex. Input_2 => "0000",) in the instantiation.  
 7. the following were also set in the instantiation:  Output_0 => nibble3, Output_1 => nibble2, Output_2 => nibble1, Output_3 => nibble0
 
+
+The final forms of the files used for this implementation is shown below.  The only file shown below is the Nexys2_top_shell, because that was the only file altered from the originals.  
 
 
 The implementation for the PRISM Program 1 Simulation can be seen below.  This is the program described above being run on an FPGA.  
