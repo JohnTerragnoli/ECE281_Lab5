@@ -67,7 +67,10 @@ Fetch2:  IRld and PCld are high. This means that the IR is ready to accept a new
 
 Decode2: Program is now at line 02, meaning that the instruction 06 is put on the databus, preparing to go into the IR on the next rising edge of the clock. This happens at 45ns. Instruction 06 is a ADAI, or an immediate execute.  The program here will add one to whatever is in the accumulator on the next clock cycle.  Also, the PCld is still on and the PC moves to line 03, because that's where the value 1 being added to the accumulator is being temporarily stored.  
 
-Execute2: At the next clock cycle, 65ns, the value 1 will be added to the accumulator and stored in the accumulator.  This saved value should then be saved as 9, which it is.  
+Execute2: The accumLd is turned on right at 55ns, or the execute. The value of the accumulator can now be changed.  This means at the next clock cycle, 65ns, the value 1 will be added to the accumulator and stored in the accumulator.  This saved value should then be saved as 9, which it is.  
+
+
+
 
 
 
