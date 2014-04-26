@@ -107,13 +107,14 @@ Execute3:   The address is changed to 03, where the output will put the accumula
 ![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/InitialProgramSimulation05.PNG "Inital Program Simulation05")
 
 
-*JumpExecute4:*  
+*JumpExecute4:*  This is explained in the snapshot above.  It is included for convenience.  
 
-*Fetch1:*
+*Fetch1:*  The PCld is high, and the JmpSel just finished being a high value.  Because of this, instead of going to the next instruction, A, the program will jump to whatever value was in the MarLo and MarHi flip-flops.  Therefore, when the Fetch1 command happens at 155ns, the PC jumps to 02!!!!  This means that the program is starting to run from the line 02 all over again, just like before.  That's why this was labeled Fetch1.  This is when the next command for the IR is preparing to go into the IR.  
 
-*Decode1:*
+*Decode1:* Here the PC increments 1, and the IR is filled with the command stored at line 02, which is the 06 value, or the ADDI command.  From here, the program repeats back to the top in the first snapshot of the simulation.  
 
 
+Going out of chronological order, here are some commands that are also involved in this program that happen later on.  
 
 
 
