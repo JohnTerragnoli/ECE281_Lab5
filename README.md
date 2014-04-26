@@ -116,7 +116,21 @@ Execute3:   The address is changed to 03, where the output will put the accumula
 
 Going out of chronological order, here are some commands that are also involved in this program that happen later on.  
 
+##945 - 985ns
 
+![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/InitialProgramSimulation06.PNG "Inital Program Simulation05")
+
+This screenshot is almost the same as the one at 105-145ns.  The only difference is that a jump does not occur here.  
+
+*Fetch4:* IRld and PCld are high, meaning that the program is ready to move onto and receive the next instruction.  The program is now on line 06. 
+
+*Decode4:*  The next instruction B, is loaded into the IR at 115ns.  B represents the command JN.  JN means that the program will execute a jump if the accumulator is negative.  The accumulator value is 0 at this point, because the add one command has already happened.   Zero is a positive number.  Therefore the program will not execute a jump.  However, it just moves onto the state decode loaddr. The PC moves onto the next line once it figures out just what instruction to put into the IR.  
+
+*Decode LoAddr4:*  Reading from the line 07, this is where the lower loctaion address is stored in the code.  Here the LoAddrLd is active, which prepares to put the value 02, which is on the databus, into MarLo.  On the next rising edge the value 02 will be put into MarLo.  
+
+*Decode HiAddr4:*  Moves to the next line in the PC, to line 08.  This is where the higher location address is stored in the code.  Here the HiAddrLd is active, which prepares to put the value 0, which is on the databus, into MarHi.  On the next rising edge the value 02 will be put into MarLo.  
+
+*Jump Execute4:* At this line, the jmpSel signal remains low.  This means that the program will not jump to the location stored in MarHi and MarLo, but instead will just increment the PC by 1, as with the other instructions. It will now move onto the instruction at line 09.   
 
 
 
