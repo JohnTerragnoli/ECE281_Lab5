@@ -311,11 +311,13 @@ This program was then simulated in the PRISM simulator, and it worked perfect.  
 
 The assembly code was then translated into VHDL code and implemented on the FPGA.  This was done using a simple export button on the PRISM simulator.  This button saved all of the assembly code as a ROM file.  
 
-So then, to implement this design on the FPGA board, this newly created ROM file needed to replace the ROM file used previously in Program 1.  Once this was done, the file Nexys2_top_shell.vhd was then used to create a programing file, and this file was then uploaded to the FPGA.  The program also worked on the FPGA, just like the simulation.  Captain Silva checked this implementation before it was due.
+So then, to implement this design on the FPGA board, this newly created ROM file needed to replace the ROM file used previously in Program 1.  Once this was done, the file Nexys2_top_shell.vhd was then used to create a programing file, and this file was then uploaded to the FPGA.  The program also worked on the FPGA, just like the simulation.  Captain Silva checked this implementation before it was due, and it did in fact work correctly.  
 
-The only file that was changed in ISE editor was the ROM file.  The ROM file originally given was replaced with the ROM file created by the PRISM simulator.  This file can be seen here:  [Program_2_ROM](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Program_2_ROM.vhd) 
+The only file that was changed in ISE editor was the ROM file and the clockbus_sig.  The ROM file originally given was replaced with the ROM file created by the PRISM simulator.  This file can be seen here:  [Program_2_ROM](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Program_2_ROM.vhd).  Also, for somereason, the clockbus_sig used in Program 1 made Program 2 run really slowly, so clockbus_sig(19) was used instead for Program 2.  
 
 The bit file for this program can be seen on the main page of this repository labeled as nexys2_top_shell_Program_2.bit.  
+
+
 
 
 
