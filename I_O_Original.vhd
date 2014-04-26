@@ -1,20 +1,20 @@
 -------------------------------------------------------------------------------
 --
--- Title       : Memory
--- Design      : Memory
--- Author      : usafa
+-- Title       : I_O_Original
+-- Author      : John Terragnoli
 -- Company     : usafa
 --
 -------------------------------------------------------------------------------
 --
--- File        : Memory.vhd
--- Generated   : Wed Mar 28 12:10:37 2007
+-- File        : I_O_Original.vhd
+-- Generated   : 24 April 2014
 -- From        : interface description file
 -- By          : Itf2Vhdl ver. 1.20
 --
 -------------------------------------------------------------------------------
 --
--- Description : 
+-- Description : designates the inputs and outputs for all programs 
+-- in lab 5.  
 --
 -------------------------------------------------------------------------------
 

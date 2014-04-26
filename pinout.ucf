@@ -1,9 +1,10 @@
-##################################################################
-#Author: John Terragnoli
-#Company : USAFA
-#Description: specifies the locations for the inputs and the outputs
-#on the FPGA Nexys2 board. 
-##################################################################
+#########################################################################
+#Title: 	Pinout.ucf
+#Author:	C3C John Terragnoli
+
+#specifies the inputs and the outputs of the program onto the FPGA board.
+##########################################################################
+
 
 NET "btn(3)" LOC = H13;
 NET "btn(2)" LOC = E18;

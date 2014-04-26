@@ -1,3 +1,13 @@
+--------------------------------------------------------------------
+--Author: C3C John Terragnoli
+--Company: USAFA
+--Title: nexys2_sseg_Original.vhd
+--Date: 26 April 2014
+--Description: puts seven segment display format data onto the nexys2
+--board.  
+--------------------------------------------------------------------
+
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;

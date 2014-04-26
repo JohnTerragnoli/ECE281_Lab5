@@ -1,22 +1,20 @@
 --------------------------------------------------------------------------------
--- Company: 
--- Engineer:
+-- Company: USAFA
+-- Engineer: John Terragnoli 
 --
--- Create Date:   10:40:03 07/11/2012
--- Design Name:   
--- Module Name:   C:/My_Designs/ECE281_Xilinx14/Lab5_test/Lab5_testbench.vhd
+-- Create Date:   24 April 2014
+-- Design Name:   Lab5_testbench.Original.vhd
 -- Project Name:  Lab5_test
--- Target Device:  
--- Tool versions:  
--- Description:   
+-- Description:   Creates the test to ensure that the PRISM module
+-- is working correctly.  
 -- 
 -- VHDL Test Bench Created by ISE for module: PRISM
 -- 
--- Dependencies:
+-- Dependencies: PRISM.vhd
 -- 
--- Revision:
+-- Revision: none
 -- Revision 0.01 - File Created
--- Additional Comments:
+-- Additional Comments:none
 --
 -- Notes: 
 -- This testbench has been automatically generated using types std_logic and

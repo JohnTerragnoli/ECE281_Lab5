@@ -1,14 +1,14 @@
 -------------------------------------------------------------------------------
 --
--- Title       : PRISM
+-- Title       : PRISM_Original
 -- Design      : PRISM
--- Author      : usafa
+-- Author      : John Terragnoli 
 -- Company     : usafa
 --
 -------------------------------------------------------------------------------
 --
 -- File        : PRISM.vhd
--- Generated   : Fri Mar 30 13:10:35 2007
+-- Generated   : 24 April 2014
 -- From        : interface description file
 -- By          : Itf2Vhdl ver. 1.20
 --

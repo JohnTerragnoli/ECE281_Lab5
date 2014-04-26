@@ -1,3 +1,11 @@
+--------------------------------------------------------------------
+--Author: C3C John Terragnoli
+--Company: USAFA
+--Date: 26 April 2014
+--Title: ROM_176x4_Original.vhd
+--Description: creates what goes in the ROM of the program.  
+--------------------------------------------------------------------
+
 library ieee;  
 use ieee.std_logic_1164.all; 
 use ieee.std_logic_unsigned.all;

@@ -2,13 +2,13 @@
 --
 -- Title       : Memory
 -- Design      : Memory
--- Author      : usafa
+-- Author      : John Terragnoli 
 -- Company     : usafa
 --
 -------------------------------------------------------------------------------
 --
 -- File        : Memory.vhd
--- Generated   : Wed Mar 28 12:10:37 2007
+-- Generated   : 24 April 2014
 -- From        : interface description file
 -- By          : Itf2Vhdl ver. 1.20
 --

@@ -2,13 +2,13 @@
 --
 -- Title       : Controller
 -- Design      : Controller
--- Author      : usafa
+-- Author      : John Terragnoli 
 -- Company     : usafa
 --
 -------------------------------------------------------------------------------
 --
 -- File        : Controller.vhd
--- Generated   : Wed Mar 28 13:08:04 2007
+-- Generated   : 24 April 2014
 -- From        : interface description file
 -- By          : Itf2Vhdl ver. 1.20
 --

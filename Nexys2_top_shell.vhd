@@ -1,11 +1,11 @@
 ----------------------------------------------------------------------------------
 -- Company: USAFA
--- Engineer: John Terragnoli 
+-- Engineer: C3C John Terragnoli
 -- 
--- Create Date:    26 April 2014
--- Module Name:    Nexys2_top_shell.vhd - Behavioral 
+-- Create Date:    12:12 17 Apr 2014 
+-- Module Name:    Nexys2_Lab3top - Behavioral 
 -- Target Devices: Nexys2 Project Board
--- Tool versions: 
+-- Tool versions: 1.0
 -- Description: This file is a shell for implementing designs on a NEXYS 2 board
 -- 
 --
@@ -40,11 +40,16 @@ architecture Behavioral of Nexys2_top_shell is
 --Outputs: 8-bit vector "sseg" used for driving a single 7-segment display
 ---------------------------------------------------------------------------------------
 	COMPONENT nibble_to_sseg
+	
 	PORT(
 		nibble : IN std_logic_vector(3 downto 0);          
 		sseg : OUT std_logic_vector(7 downto 0)
 		);
 	END COMPONENT;
+	
+	
+	
+
 
 ---------------------------------------------------------------------------------------------
 --This component manages the logic for displaying values on the NEXYS 2 7-segment displays
@@ -91,7 +96,22 @@ signal ClockBus_sig : STD_LOGIC_VECTOR (26 downto 0);
 --------------------------------------------------------------------------------------
 --Insert your design's component declaration below	
 --------------------------------------------------------------------------------------
-
+	---Declaration of the PRISM thing.  
+	COMPONENT PRISM 
+	 port(
+		 Clock : in STD_LOGIC;
+		 Reset_L : in STD_LOGIC; 
+		 Control_Bus : out std_logic_vector(25 downto 0);
+		 Input_0 : in STD_LOGIC_VECTOR(3 downto 0);
+		 Input_1 : in STD_LOGIC_VECTOR(3 downto 0);
+		 Input_2 : in STD_LOGIC_VECTOR(3 downto 0);
+		 Input_3 : in STD_LOGIC_VECTOR(3 downto 0);
+		 Output_0 : out STD_LOGIC_VECTOR(3 downto 0);
+		 Output_1 : out STD_LOGIC_VECTOR(3 downto 0);
+		 Output_2 : out STD_LOGIC_VECTOR(3 downto 0);
+		 Output_3 : out STD_LOGIC_VECTOR(3 downto 0)
+	     );
+	end COMPONENT;
 
 
 --------------------------------------------------------------------------------------
@@ -124,11 +144,6 @@ LED <= CLOCKBUS_SIG(26 DOWNTO 19);
 --Note: You must set each "nibble" signal to a value. 
 --		  Example: if you are not using 7-seg display #3 set nibble3 to "0000"
 --------------------------------------------------------------------------------------
-
-nibble0 <= 
-nibble1 <= 
-nibble2 <= 
-nibble3 <= 
 
 --This code converts a nibble to a value that can be displayed on 7-segment display #0
 	sseg0: nibble_to_sseg PORT MAP(
@@ -171,7 +186,21 @@ nibble3 <=
 -----------------------------------------------------------------------------
 --Instantiate the design you with to implement below and start wiring it up!:
 -----------------------------------------------------------------------------
-
+	PRISM_INSTANT : PRISM 
+	 port map(
+		 Clock => clockbus_sig(19),
+		 --might have to change if reset isn't working correctly.  
+		 Reset_L => not btn(3),
+		 --Control_Bus : out std_logic_vector(25 downto 0);
+		 Input_0 => switch(3 downto 0),
+		 Input_1 => switch (7 downto 4),
+		 Input_2 => "0000",
+		 Input_3 => "0000",
+		 Output_0 => nibble3,
+		 Output_1 => nibble2,
+		 Output_2 => nibble1,
+		 Output_3 => nibble0
+	     );
+ 
 
 end Behavioral;
-

@@ -1,14 +1,13 @@
 -------------------------------------------------------------------------------
 --
 -- Title       : Datapath
--- Design      : Datapath
--- Author      : usafa
+-- Author      : John Terragnoli
 -- Company     : usafa
 --
 -------------------------------------------------------------------------------
 --
 -- File        : Datapath.vhd
--- Generated   : Fri Mar 30 11:12:38 2007
+-- Generated   : 24 April 2014
 -- From        : interface description file
 -- By          : Itf2Vhdl ver. 1.20
 --
