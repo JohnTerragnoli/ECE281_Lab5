@@ -14,17 +14,25 @@ These files were given initially and were used and modified throughout the lab:
 
 [Lab5_Testbench_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Lab5_testbench_Original.vhd)
 
-[Clock_Divider_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Clock_Divider_Original.vhd)
-
 [Lab5_Waveform_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Lab5_waveform_Original.wcfg)
 
 [Memory_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Memory_Original.vhd)
 
-[Nexys2_top_shell_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Nexys2_top_shell_Original.vhd)
-
 [PRISM_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/PRISM_Original.vhd)
 
 [RAM_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/RAM_16x4_Original.vhd)
+
+[ROM_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/ROM_176x4_Original.vhd)
+
+[Nexys2_top_shell_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Nexys2_top_shell_Original.vhd)
+
+[Clock_Divider_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Clock_Divider_Original.vhd)
+
+[nexys2_sseg_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/nexys2_sseg_Original.vhd)
+
+[nibble_to_sseg_original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/nibble_to_sseg_Original.vhd)
+
+[Pinout_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/pinout_Original.ucf)
 
 
 Also, the ALU file from lab4 was also used in this project.  This file is shown here: 
@@ -150,6 +158,20 @@ This screenshot is almost the same as the one at 105-145ns.  The only difference
 
 
 #PRISM Program 1 Implementation
+
+The following files were then added to the ISE Project so that the program could be run on the FPGA.  Below are the original files given. 
+
+[Nexys2_top_shell_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Nexys2_top_shell_Original.vhd)
+
+[Clock_Divider_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Clock_Divider_Original.vhd)
+
+[nexys2_sseg_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/nexys2_sseg_Original.vhd)
+
+[nibble_to_sseg_original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/nibble_to_sseg_Original.vhd)
+
+[Pinout_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/pinout_Original.ucf)
+
+
 
 The implementation for the PRISM Program 1 Simulation can be seen below.  This is the program described above being run on an FPGA.  
 [Program_1](https://www.youtube.com/watch?v=1jAqDPLEqxA&feature=youtu.be)
