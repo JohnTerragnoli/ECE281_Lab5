@@ -48,7 +48,7 @@ After this, a JN command is initiated to return to right before the add one comm
 
 Screenshots of the simulation can be seen below.  Multiple screenshots were taken so that the entire running of the program could be seen and analyzed. 
 
-##0-25ns
+##0-35ns
 ![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/InitialProgramSimulation01.png "Ititial Program Simulation01")
 
 Fetch1: The reset button is hit, making IRld and PCld a high, making PC and IR zero.  This sets up the zero command in the program, which is just making the PC go onto the next command.  This means at the next rising clock, the PC will change to 01 and the IR will change to whatever command is located on line 0 of the instruction in the decode section.  
