@@ -4,6 +4,15 @@ ECE281_Lab5
 
 #Initial PRISM Simulation: 
 
+These files were given initially and were used and modified throughout the lab: 
+
+[Controller_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Controller_Original.vhd)
+
+[Datapath_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Datapath_Original.vhd)
+
+[I/O_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/I_O_Original.vhd)
+
+
 The files that were given initially were supposed to run the following program when PRISM_Simulation file was run. 
 
 ![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/InitialProgramPic.PNG "Initial Program Description")
