@@ -73,6 +73,20 @@ Execute2: The accumLd is turned on right at 55ns, or the execute. The value of t
 
 
 
+##65-105ns
+![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/InitialProgramSimulation03.PNG "Inital Program Simulation03")
+
+Fetch3:  IRld and PCld are high. This means that the IR is ready to accept a new command and that the Program counter is about to move to the next line in the code.  The PC moves to line 04 at Fetch2.    The opsel changes to 0 but this doesn't matter because the accumulator load is off. It prepares to put the command 04 into the IR. 
+
+Decode3: 04 is put into the IR.  This instruction is OUT, meaning that the value in the accumulator will be output to a specific port. The PC moves to the 05, since it's load is still active.  
+
+Decode LoAddr3: MarLo_ld is turned on, meaning the value on the databus can be stored in MarLo.  This will later serve as the output for the program.  03 is not put into MarLo until 95ns.  
+
+Execute3:   The address is changed to 03, where the output will put the accumulator value.  At 105ns, the execute command is finally finished with the value in the accumulator, 9, being sent to output 03.  
+
+
+
+
 
 
 
