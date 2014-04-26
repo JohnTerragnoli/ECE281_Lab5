@@ -51,6 +51,8 @@ Screenshots of the simulation can be seen below.  Multiple screenshots were take
 ##0-35ns
 ![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/InitialProgramSimulation01.png "Ititial Program Simulation01")
 
+
+
 Fetch1: The reset button is hit, making IRld and PCld a high, making PC and IR zero.  This sets up the zero command in the program, which is just making the PC go onto the next command.  This means at the next rising clock, the PC will change to 01 and the IR will change to whatever command is located on line 0 of the instruction in the decode section.  
 
 Decode1: The command at line 00 is 07, which is LDAI, meaning an immediate value is loaded into the accumulator.  This is considered an Immediate Execute instruction.  An immediate execute means that the program will perform execute at the next clock cycle.  This means that the value 8 should be in the accumulator at 35ns, or the end of the execute time, which it is.  
@@ -58,6 +60,8 @@ Decode1: The command at line 00 is 07, which is LDAI, meaning an immediate value
 Execute1: The value 8 is put into the accumulator.  Accumulator load was high right before this happened, which allowed the accumulator value to change.  Also, the PCld has gone high at 25ns so that it can prepare to move onto the next instruction.  
 
 
+##35-65ns
+![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/InitialProgramSimulation02.PNG "Inital Program Simulation02")
 
 
 
