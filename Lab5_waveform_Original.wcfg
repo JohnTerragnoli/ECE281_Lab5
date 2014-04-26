@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/PUT YOUR PATH HERE/lab5_testbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="lab5_testbench" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/lab5_testbench/reset_l" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_l</obj_property>
+      <obj_property name="ObjectShortName">reset_l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/input_0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">input_0[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/input_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">input_1[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/input_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">input_2[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/input_3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">input_3[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/ir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ir[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ir[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/opsel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">opsel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">opsel[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/pc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/accumulator" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">accumulator[3:0]</obj_property>
+      <obj_property name="ObjectShortName">accumulator[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/marhi" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">marhi[3:0]</obj_property>
+      <obj_property name="ObjectShortName">marhi[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/marlo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">marlo[3:0]</obj_property>
+      <obj_property name="ObjectShortName">marlo[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/output_0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output_0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">output_0[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/output_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output_1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">output_1[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/output_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output_2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">output_2[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/output_3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output_3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">output_3[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/irld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">irld</obj_property>
+      <obj_property name="ObjectShortName">irld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/marhild" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">marhild</obj_property>
+      <obj_property name="ObjectShortName">marhild</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/marlold" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">marlold</obj_property>
+      <obj_property name="ObjectShortName">marlold</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/jmpsel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">jmpsel</obj_property>
+      <obj_property name="ObjectShortName">jmpsel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/pcld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pcld</obj_property>
+      <obj_property name="ObjectShortName">pcld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/addrsel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addrsel</obj_property>
+      <obj_property name="ObjectShortName">addrsel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/accld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">accld</obj_property>
+      <obj_property name="ObjectShortName">accld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/enaccbuffer" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enaccbuffer</obj_property>
+      <obj_property name="ObjectShortName">enaccbuffer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/r_w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r_w</obj_property>
+      <obj_property name="ObjectShortName">r_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/memsel_l" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">memsel_l</obj_property>
+      <obj_property name="ObjectShortName">memsel_l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/iosel_l" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">iosel_l</obj_property>
+      <obj_property name="ObjectShortName">iosel_l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/aeqzero_int" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">aeqzero_int</obj_property>
+      <obj_property name="ObjectShortName">aeqzero_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_testbench/uut/PRISM_Datapath/alesszero_int" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alesszero_int</obj_property>
+      <obj_property name="ObjectShortName">alesszero_int</obj_property>
+   </wvobject>
+</wave_config>
