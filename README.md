@@ -27,6 +27,11 @@ These files were given initially and were used and modified throughout the lab:
 [RAM_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/RAM_16x4_Original.vhd)
 
 
+Also, the ALU file from lab4 was also used in this project.  This file is shown here: 
+
+[ALU_Lab4](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab4/master/ALU_shell.vhd)
+
+
 
 The files that were given initially were supposed to run the following program when PRISM_Simulation file was run. 
 
