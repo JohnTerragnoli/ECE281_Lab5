@@ -61,7 +61,7 @@ Screenshots of the simulation can be seen below.  Multiple screenshots were take
 
 
 
-*Fetch1:* The reset button is hit, and IRld and PCld are high, making PC and IR zero.  This sets up the zero command in the program, which is just making the PC go onto the next command.  This means at the next rising clock, the PC will change to 01 and the IR will change to whatever command is located on line 01 of the instruction in the decode section.  Moving PC to line 01 is just getting the value that is supposed to go into the accumulator.  
+*Fetch1:* The reset button low, making it active, and IRld and PCld are high, meaning IR and PC can change, making PC and IR zero.  This sets up the zero command in the program, which is just making the PC go onto the next command.  This means at the next rising clock, the PC will change to 01 and the IR will change to whatever command is located on line 01 of the instruction in the decode section.  Moving PC to line 01 is just getting the value that is supposed to go into the accumulator.  
 
 *Decode1:* The command at line 00 is 07, which is LDAI, meaning an immediate value is loaded into the accumulator.  This is considered an Immediate Execute instruction.  An immediate execute means that the program will perform execute at the next clock cycle.  This means that the value 8 should be in the accumulator at 35ns, or the end of the execute time, which it is.  This can happen because the opsel goes to 7, meaning that the ALU is performing a load function from the databus.   
 
@@ -171,6 +171,13 @@ The following files were then added to the ISE Project so that the program could
 
 [Pinout_Original](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/pinout_Original.ucf)
 
+
+To make these files work, the following corrections were made: 
+
+1. A declaration and an instantiation of the PRISM module was created inside the Nexys2_top_shell.vhd file.  
+2. Clockbus_Sig(23) as the PRISM clock for the instantiation.  
+3. btn(3) was the reset.  Not btn(3) was used instead of just btn(3), because the reset is an active low!!
+4. 
 
 
 The implementation for the PRISM Program 1 Simulation can be seen below.  This is the program described above being run on an FPGA.  
