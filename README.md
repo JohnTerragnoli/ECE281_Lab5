@@ -32,8 +32,7 @@ Also, the ALU file from lab4 was also used in this project.  This file is shown 
 [ALU_Lab4](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab4/master/ALU_shell.vhd)
 
 
-
-The files that were given initially were supposed to run the following program when PRISM_Simulation file was run. 
+All of the above files were then added to a project together in ISE Project Editor. Once this was done, the Lab5_testbench file was simulated using the Lab5_waveform.wcfg file.  This was supposed to run the following program, shown below: 
 
 ![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/InitialProgramPic.PNG "Initial Program Description")
 
