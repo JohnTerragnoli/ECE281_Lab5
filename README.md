@@ -194,7 +194,8 @@ The implementation for the PRISM Program 1 Simulation can be seen below in video
 [Program_1](https://www.youtube.com/watch?v=1jAqDPLEqxA&feature=youtu.be)
 
 
-This functionality was checked by Dr. Neebel on the lesson that it was due.  
+This functionality was checked by Dr. Neebel on the lesson that it was due.  The bit file for Program 1 can be seen on the home page of this repository labeled as nexys2_top_shell_Program_1.bit
+
 
 
 
@@ -311,4 +312,6 @@ This program was then simulated in the PRISM simulator, and it worked perfect.  
 The assembly code was then translated into VHDL code and implemented on the FPGA.  This was done using a simple export button on the PRISM simulator.  This button saved all of the assembly code as a ROM file.  
 
 So then, to implement this design on the FPGA board, this newly created ROM file needed to replace the ROM file used previously in Program 1.  Once this was done, the file Nexys2_top_shell.vhd was then used to create a programing file, and this file was then uploaded to the FPGA.  The program also worked on the FPGA, just like the simulation.  
+
+The only file that was changed in ISE editor was the ROM file.  The ROM file originally given was replaced with the ROM file created by the PRISM simulator.  This file can be seen here:   
 
