@@ -44,12 +44,32 @@ This is because after the LDAI, which loads the value 8 into the accumulator, co
 
 After this, a JN command is initiated to return to right before the add one command, but only if the accumulator is negative.  Therefore, this program will jump back to step 02 when the accumulator is either 9,A,B,C,D,E, or F.  Negative numbers are numers that are above 8 in binary, because this means that the left most bit will be a '1'.  So the program will count from 9 to F.  When the final repitition is added, the value in the accumulator will roll over to be zero, which is not negative.  F plus 1 is equal to 0.  Because the accumulator is no longer negative, it will skip the command at line 06, and will instead move onto line 09.  The JMP commanded, an unconditional jump, at 09 is an infinite loop on itself, meaning that the output value will not change unless the program is reset.  Then, once the program is reset, the program will start counting again as stated above, starting with outputting 9.  
 
+#Initial Simulation
+
+Screenshots of the simulation can be seen below.  Multiple screenshots were taken so that the entire running of the program could be seen and analyzed. 
+
+##0-25ns
+![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/InitialProgramSimulation01.png "Ititial Program Simulation01")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 A picture of the simulation can be seen here: 
 ![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/InitialProgramSimulation.PNG "Ititial Program Simulation")
 
 
 
-#PRISM Program 1 Simulation
+#PRISM Program 1 Implementation
 
 The simulation for the PRISM Program 1 Simulation can be seen here:[Program_1](https://www.youtube.com/watch?v=1jAqDPLEqxA&feature=youtu.be)
 
