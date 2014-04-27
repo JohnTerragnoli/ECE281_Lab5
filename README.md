@@ -409,7 +409,7 @@ PCLd - HIGH
 
 IRLd - HIGH
 
-ACCLd - 
+ACCLd - LOW
 
 2. The current state is Decode LoAddr and the IR contains “OUT.”  What are the control signals are asserted, and what will the next state be?
 
