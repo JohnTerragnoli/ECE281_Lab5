@@ -379,12 +379,13 @@ A nested for loop:
 Then, after both the flowchart and the text were written, the program was put into the PRISM simulator.  The .psm file for the simulator is shown here:  [PRISM_Program_3](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/PRISM_Program_3.psm)
 
 Video's of the testcases can be seen here: 
+
 1. [Testcase_1](https://www.youtube.com/watch?v=8gfJIKIzX_8&feature=youtu.be)
-2. 
+
 2. [Testcase_2](https://www.youtube.com/watch?v=Jqy8OjA9FGI&feature=youtu.be)
-3. 
+ 
 3. [Testcase_3](https://www.youtube.com/watch?v=RO-Kuq7-32Q&feature=youtu.be)
-4. 
+
 4. [Testcase_4](https://www.youtube.com/watch?v=HtVqmm0KloI&feature=youtu.be)
 
 
