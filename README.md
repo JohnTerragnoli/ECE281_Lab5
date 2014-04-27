@@ -91,7 +91,7 @@ Screenshots of the simulation can be seen below.  Multiple screenshots were take
 
 *Decode LoAddr3:* MarLo_ld is turned on, meaning the value on the databus can be stored in MarLo.  This will later serve as the output for the program.  03 is not put into MarLo until 95ns.  
 
-*Execute3:*   The address is changed to 03, where the output will put the accumulator value.  At 105ns, the execute command is finally finished with the value in the accumulator, 9, being sent to output 03.  
+*Execute3:*   (Direction IO Execute) The address is changed to 03, where the output will put the accumulator value.  At 105ns, the execute command is finally finished with the value in the accumulator, 9, being sent to output 03.  
 
 
 ##105 - 145ns
@@ -403,7 +403,7 @@ The altered ROM code and the .bit file can be seen here:
 #**Questions:**
 
 
-1. When the controller's current state is “FETCH,” what is the status of the following control lines:
+*1. When the controller's current state is “FETCH,” what is the status of the following control lines:*
 
 PCLd - HIGH
 
@@ -411,18 +411,31 @@ IRLd - HIGH
 
 ACCLd - LOW
 
-2. The current state is Decode LoAddr and the IR contains “OUT.”  What are the control signals are asserted, and what will the next state be?
+*2. The current state is Decode LoAddr and the IR contains “OUT.”  What are the control signals are asserted, and* what will the next state be?
+ 
+Control signals asserted: MarLoLd, PCLd, r_w (write), memSel_l(active low), and alesszero_int.  
+Next state = Direct IO Execute
 
 
-3. What are the three status signals sent from the PRISM datapath to the PRISM controller?
+
+*3. What are the three status signals sent from the PRISM datapath to the PRISM controller?*
+
+IR, aeqzero_int, and alesszero_int.  
+
+*4. Why is it important that ACCLd signal be active during the execute state for the ADDI instruction?*
+
+So that the accumulator can actually be altered.  If the accumulator cannot be altered, then the ADDI command cannot add a value into the accumulator.  
 
 
-4. Why is it important that ACCLd signal be active during the execute state for the ADDI instruction?
+*5. What changes are necessary to the PRISM datapath to add another instruction (SUBI, which would subtract an immediate value from the accumulator) to the instruction set?*
+
+The ALU would have to be altered first to contain a SUBI command.  This would actually be pretty easy.  Just take the two's compliment of whatever is coming off of the data bus and make it the 8th command on the multiplexer on the ALU, since there are only seven commands there anyway.  Then opSel, and what controls it would have to be changed to be able to choose the SUBI command when desired.  
 
 
-5. What changes are necessary to the PRISM datapath to add another instruction (SUBI, which would subtract an immediate value from the accumulator) to the instruction set?
 
 #**Documentation**
+
+NONE
 
 
 
