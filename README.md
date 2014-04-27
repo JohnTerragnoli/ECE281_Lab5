@@ -326,7 +326,9 @@ For A functionality, another program had to be created.  The designs were not sp
 
 The extra program ended up being a nested for loop.  The inside and outside loop could be as big as one hex digit. The flowchart for the design can be seen below:
 
-![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Program_3_Flowchart.jpg "Inital Program Simulation05")
+![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Program_3_Flowchart.jpg "Program 3 Flowchart")
+
+NOTE: THERE SHOULD BE AN UNCONDITIONAL ARROW GOING FROM THE OUTPUT TO THE "CHECK OUTSIDE FIRST" BOX.  
 
 The following text was written while this flowchart and program were being written.  It goes into deep detail of how this program actually runs in assembly.  This text can be seen below: 
 
