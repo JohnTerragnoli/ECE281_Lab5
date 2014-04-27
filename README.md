@@ -392,6 +392,12 @@ Video's of the testcases can be seen here:
 NOTE: In order to watch these videos, the resolution must be set to HD, otherwise the numbers on the screen cannot be seen.  
 
 
+After this was done, the same program was implemented on an FPGA.  To do this, the PRISM simulator was used to convert the ROM file from .psm to .vhd.  Then, this code was used to replace the ROM code used by the Nexys2_top_shell file.  Once this was done, a .bit file for the program was created and uploaded to the FPGA.  
+
+The altered ROM code and the .bit file can be seen here:
+
+
+
 
 
 #**Questions:**
