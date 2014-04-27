@@ -324,6 +324,62 @@ The bit file for this program can be seen on the main page of this repository la
 
 For A functionality, another program had to be created.  The designs were not specified. 
 
+The extra program ended up being a nested for loop.  The inside and outside loop could be as big as one hex digit. The flowchart for the design can be seen below:
+
+![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Program_3_Flowchart.jpg "Inital Program Simulation05")
+
+The following text was written while this flowchart and program were being written.  It goes into deep detail of how this program actually runs in assembly.  This text can be seen below: 
+
+```
+A nested for loop: 
+	1) Make a space for inside and outside loop counter.  
+		a. Inside and outside loops can only be 1 hex digit.  
+		b. Make places for value of each counter.  
+	2) Then Check Inside Counter
+		a. Input(1) into accumulator
+		b. Negate accumulator
+		c. Add inside counter into accumulator
+		d. If accumulator  = 0, then the inside counter has reached limit. Jump to Check Outside counter.  
+		e. If not, add one to the inside counter (just continue on)
+	3) Add 1 Inside.    
+		a. Load inside into accum. 
+		b. Add 1 to the accumulator.  
+		c. STA accum to inside counter.  
+		d. Unconditionally Jump to OUTPUT.  
+	
+	4) Check Outside Counter. 
+		a. Input(0) into the accumulator
+		b. Negate accumulator
+		c. Add outside counter into accumulator
+		d. If accumulator = 0, then outside counter has reached it's limit.  Jump to reset display
+		e. If not, keep going to add one to outside counter. 
+	5) Add 1 Outside
+		a. Need to reset the inside counter: 
+		b. Load 0 into accum
+		c. STA accum to inside counter. 
+		d. Load outside into accum
+		e. Add 1 to accum
+		f. STA accum to outside counter. 
+		g. Unconditionally jump to OUTPUT 
+	
+	6) Reset display: (THOUGH ABOUT USING THIS, THEN IT WAS REMOVED FROM THE PROGRAM AND REPLACED WITH THE END) (wanted to keep the last counting on the screen) 
+		a. 0 into the accumulator
+		b. STA accum into inside counter.
+		c. STA accum into outside counter.  
+		d. Unconditionally jump to output.  
+	7) END: 
+		a. Unconditionally jumps to itself until program is reset.  
+		
+	8) Output: 
+		a. Add 1 to the outside counter.  Outside counter will only be up to 7.  do this after the values are output to the screen.  
+		b. 
+
+```
+
+Then, after both the flowchart and the text were written, the program was put into the PRISM simulator.  The .psm file for the simulator is shown here:  [PRISM_Program_3](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/PRISM_Program_3.psm)
+
+
+
 
 #**Questions:**
 
