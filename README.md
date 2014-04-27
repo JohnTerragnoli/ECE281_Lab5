@@ -389,6 +389,9 @@ Video's of the testcases can be seen here:
 4. [Testcase_4](https://www.youtube.com/watch?v=HtVqmm0KloI&feature=youtu.be)
 
 
+NOTE: In order to watch these videos, the resolution must be set to HD, otherwise the numbers on the screen cannot be seen.  
+
+
 
 
 #**Questions:**
