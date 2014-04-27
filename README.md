@@ -208,6 +208,8 @@ The purpose of the second program was to write something that would count up or 
 
 The flow chart can be seen below:
 
+![alt text](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Program_2_Flowchart.jpg "Inital Program Simulation05")
+
 The detailed description of the flow chart can be seen below: 
 
 ```
