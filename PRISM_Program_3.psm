@@ -1,0 +1,256 @@
+		   00	   7	LDAI	0	Initiate storage	N	1	Y
+		   01	   0				Y	0	N
+		   02	   D	STA	Counter.outside		N	2	Y
+		   03	   0				Y	0	N
+		   04	   B				Y	0	N
+		   05	   D	STA	Counter.inside		N	2	Y
+		   06	   1				Y	0	N
+		   07	   B				Y	0	N
+		   08	   5	IN	1		N	1	N
+		   09	   1				Y	0	N
+	Check Outside First	   0A	   A	JZ	end	Check Inside First	N	2	N
+		   0B	   A				Y	0	N
+		   0C	   3				Y	0	N
+	Check Inside	   0D	   5	IN	2	Check Inside	N	1	Y
+		   0E	   2				Y	0	N
+		   0F	   1	NEG			N	0	Y
+		   10	   E	ADDD	Counter.inside		N	2	Y
+		   11	   1				Y	0	N
+		   12	   B				Y	0	N
+		   13	   A	JZ	Check Outside	Jump to Check Outside	N	2	Y
+		   14	   1				Y	0	N
+		   15	   2				Y	0	N
+	Add 1 Inside	   16	   F	LDAD	Counter.inside	Add 1 Inside	N	2	Y
+		   17	   1				Y	0	N
+		   18	   B				Y	0	N
+		   19	   6	ADDI	1		N	1	Y
+		   1A	   1				Y	0	N
+		   1B	   D	STA	Counter.inside		N	2	Y
+		   1C	   1				Y	0	N
+		   1D	   B				Y	0	N
+		   1E	   9	JMP	OUTPUT		N	2	Y
+		   1F	   D				Y	0	N
+		   20	   3				Y	0	N
+	Check Outside	   21	   5	IN	1	Check Outside	N	1	Y
+		   22	   1				Y	0	N
+		   23	   1	NEG			N	0	Y
+		   24	   E	ADDD	Counter.outside		N	2	Y
+		   25	   0				Y	0	N
+		   26	   B				Y	0	N
+		   27	   A	JZ	end	Jump to Reset Display	N	2	Y
+		   28	   A				Y	0	N
+		   29	   3				Y	0	N
+	Add 1 Outside	   2A	   7	LDAI	0	Add 1 Outside	N	1	Y
+		   2B	   0				Y	0	N
+		   2C	   D	STA	Counter.inside		N	2	Y
+		   2D	   1				Y	0	N
+		   2E	   B				Y	0	N
+		   2F	   F	LDAD	Counter.outside		N	2	Y
+		   30	   0				Y	0	N
+		   31	   B				Y	0	N
+		   32	   6	ADDI	1		N	1	Y
+		   33	   1				Y	0	N
+		   34	   D	STA	Counter.outside		N	2	Y
+		   35	   0				Y	0	N
+		   36	   B				Y	0	N
+		   37	   9	JMP	OUTPUT	Jump to OUTPUT	N	2	Y
+		   38	   D				Y	0	N
+		   39	   3				Y	0	N
+	end	   3A	   9	JMP	end		N	2	N
+		   3B	   A				Y	0	N
+		   3C	   3				Y	0	N
+	OUTPUT	   3D	   F	LDAD	Counter.outside		N	2	Y
+		   3E	   0				Y	0	N
+		   3F	   B				Y	0	N
+		   40	   4	OUT	1		N	1	Y
+		   41	   1				Y	0	N
+		   42	   F	LDAD	Counter.inside		N	2	Y
+		   43	   1				Y	0	N
+		   44	   B				Y	0	N
+		   45	   4	OUT	2		N	1	Y
+		   46	   2				Y	0	N
+		   47	   9	JMP	Check Inside		N	2	Y
+		   48	   D				Y	0	N
+		   49	   0				Y	0	N
+		   4A	   0	NOP			N	0	Y
+		   4B	   0	NOP			N	0	Y
+		   4C	   0	NOP			N	0	Y
+		   4D	   0	NOP			N	0	Y
+		   4E	   0	NOP			N	0	Y
+		   4F	   0	NOP			N	0	Y
+		   50	   0	NOP			N	0	Y
+		   51	   0	NOP			N	0	Y
+		   52	   0	NOP			N	0	Y
+		   53	   0	NOP			N	0	Y
+		   54	   0	NOP			N	0	Y
+		   55	   0	NOP			N	0	Y
+		   56	   0	NOP			N	0	Y
+		   57	   0	NOP			N	0	Y
+		   58	   0	NOP			N	0	Y
+		   59	   0	NOP			N	0	Y
+		   5A	   0	NOP			N	0	Y
+		   5B	   0	NOP			N	0	Y
+		   5C	   0	NOP			N	0	Y
+		   5D	   0	NOP			N	0	Y
+		   5E	   0	NOP			N	0	Y
+		   5F	   0	NOP			N	0	Y
+		   60	   0	NOP			N	0	Y
+		   61	   0	NOP			N	0	Y
+		   62	   0	NOP			N	0	Y
+		   63	   0	NOP			N	0	Y
+		   64	   0	NOP			N	0	Y
+		   65	   0	NOP			N	0	Y
+		   66	   0	NOP			N	0	Y
+		   67	   0	NOP			N	0	Y
+		   68	   0	NOP			N	0	Y
+		   69	   0	NOP			N	0	Y
+		   6A	   0	NOP			N	0	Y
+		   6B	   0	NOP			N	0	Y
+		   6C	   0	NOP			N	0	Y
+		   6D	   0	NOP			N	0	Y
+		   6E	   0	NOP			N	0	Y
+		   6F	   0	NOP			N	0	Y
+		   70	   0	NOP			N	0	Y
+		   71	   0	NOP			N	0	Y
+		   72	   0	NOP			N	0	Y
+		   73	   0	NOP			N	0	Y
+		   74	   0	NOP			N	0	Y
+		   75	   0	NOP			N	0	Y
+		   76	   0	NOP			N	0	Y
+		   77	   0	NOP			N	0	Y
+		   78	   0	NOP			N	0	Y
+		   79	   0	NOP			N	0	Y
+		   7A	   0	NOP			N	0	Y
+		   7B	   0	NOP			N	0	Y
+		   7C	   0	NOP			N	0	Y
+		   7D	   0	NOP			N	0	Y
+		   7E	   0	NOP			N	0	Y
+		   7F	   0	NOP			N	0	Y
+		   80	   0	NOP			N	0	Y
+		   81	   0	NOP			N	0	Y
+		   82	   0	NOP			N	0	Y
+		   83	   0	NOP			N	0	Y
+		   84	   0	NOP			N	0	Y
+		   85	   0	NOP			N	0	Y
+		   86	   0	NOP			N	0	Y
+		   87	   0	NOP			N	0	Y
+		   88	   0	NOP			N	0	Y
+		   89	   0	NOP			N	0	Y
+		   8A	   0	NOP			N	0	Y
+		   8B	   0	NOP			N	0	Y
+		   8C	   0	NOP			N	0	Y
+		   8D	   0	NOP			N	0	Y
+		   8E	   0	NOP			N	0	Y
+		   8F	   0	NOP			N	0	Y
+		   90	   0	NOP			N	0	Y
+		   91	   0	NOP			N	0	Y
+		   92	   0	NOP			N	0	Y
+		   93	   0	NOP			N	0	Y
+		   94	   0	NOP			N	0	Y
+		   95	   0	NOP			N	0	Y
+		   96	   0	NOP			N	0	Y
+		   97	   0	NOP			N	0	Y
+		   98	   0	NOP			N	0	Y
+		   99	   0	NOP			N	0	Y
+		   9A	   0	NOP			N	0	Y
+		   9B	   0	NOP			N	0	Y
+		   9C	   0	NOP			N	0	Y
+		   9D	   0	NOP			N	0	Y
+		   9E	   0	NOP			N	0	Y
+		   9F	   0	NOP			N	0	Y
+		   A0	   0	NOP			N	0	Y
+		   A1	   0	NOP			N	0	Y
+		   A2	   0	NOP			N	0	Y
+		   A3	   0	NOP			N	0	Y
+		   A4	   0	NOP			N	0	Y
+		   A5	   0	NOP			N	0	N
+		   A6	   0	NOP			N	0	N
+		   A7	   0	NOP			N	0	N
+		   A8	   0	NOP			N	0	N
+		   A9	   0	NOP			N	0	N
+		   AA	   0	NOP			N	0	N
+		   AB	   0	NOP			N	0	N
+		   AC	   0	NOP			N	0	N
+		   AD	   0	NOP			N	0	N
+		   AE	   0	NOP			N	0	N
+		   AF	   0	NOP			N	0	N
+	Counter.outside	   B0	   0	
+	Counter.inside	   B1	   0	
+		   B2	   0	
+		   B3	   0	
+		   B4	   0	
+		   B5	   0	
+		   B6	   0	
+		   B7	   0	
+		   B8	   0	
+		   B9	   0	
+		   BA	   0	
+		   BB	   0	
+		   BC	   0	
+		   BD	   0	
+		   BE	   0	
+		   BF	   0	
+		   C0	   0	
+		   C1	   0	
+		   C2	   0	
+		   C3	   0	
+		   C4	   0	
+		   C5	   0	
+		   C6	   0	
+		   C7	   0	
+		   C8	   0	
+		   C9	   0	
+		   CA	   0	
+		   CB	   0	
+		   CC	   0	
+		   CD	   0	
+		   CE	   0	
+		   CF	   0	
+		   D0	   0	
+		   D1	   0	
+		   D2	   0	
+		   D3	   0	
+		   D4	   0	
+		   D5	   0	
+		   D6	   0	
+		   D7	   0	
+		   D8	   0	
+		   D9	   0	
+		   DA	   0	
+		   DB	   0	
+		   DC	   0	
+		   DD	   0	
+		   DE	   0	
+		   DF	   0	
+		   E0	   0	
+		   E1	   0	
+		   E2	   0	
+		   E3	   0	
+		   E4	   0	
+		   E5	   0	
+		   E6	   0	
+		   E7	   0	
+		   E8	   0	
+		   E9	   0	
+		   EA	   0	
+		   EB	   0	
+		   EC	   0	
+		   ED	   0	
+		   EE	   0	
+		   EF	   0	
+		   F0	   0	
+		   F1	   0	
+		   F2	   0	
+		   F3	   0	
+		   F4	   0	
+		   F5	   0	
+		   F6	   0	
+		   F7	   0	
+		   F8	   0	
+		   F9	   0	
+		   FA	   0	
+		   FB	   0	
+		   FC	   0	
+		   FD	   0	
+		   FE	   0	
+		   FF	   0	
