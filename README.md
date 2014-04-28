@@ -396,23 +396,23 @@ NOTE: In order to watch these videos, the resolution must be set to HD, otherwis
 
 After this was done, the same program was implemented on an FPGA.  To do this, the PRISM simulator was used to convert the ROM file from .psm to .vhd.  Then, this code was used to replace the ROM code used by the Nexys2_top_shell file.  Once this was done, a .bit file for the program was created and uploaded to the FPGA.  
 
-The altered ROM file can be seen here:
-
-[Program3_ROM](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Program%203%20ROM.vhd)
+The altered ROM file can be seen here: [Program3_ROM](https://raw.githubusercontent.com/JohnTerragnoli/ECE281_Lab5/master/Program%203%20ROM.vhd)
 
 The implementation tests for Program 3 on the Nexys2 can be seen in these videos: 
 
 
 1. [Testcase_1](https://www.youtube.com/watch?v=TIvtJ72H1oQ&feature=youtu.be)
 
-2. [Testcase_2](https://www.youtube.com/watch?v=Jqy8OjA9FGI&feature=youtu.be)
+2. [Testcase_2](https://www.youtube.com/watch?v=o8MJEw4mgHU&feature=youtu.be)
  
-3. [Testcase_3](https://www.youtube.com/watch?v=RO-Kuq7-32Q&feature=youtu.be)
+3. [Testcase_3](https://www.youtube.com/watch?v=pe7gIO0H5CQ&feature=youtu.be)
 
-4. [Testcase_4](https://www.youtube.com/watch?v=HtVqmm0KloI&feature=youtu.be)
+4. [Testcase_4](https://www.youtube.com/watch?v=B8DHs8cY-Dk&feature=youtu.be)
 
 
 Again, for the best viewing experience, please turn on HD mode when watching the video :) 
+
+The bit file for this program can be seen on the main repository page, labeled nexys2_top_shell_program_3.bit.  
 
 
 
