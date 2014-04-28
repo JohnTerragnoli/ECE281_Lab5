@@ -448,7 +448,9 @@ So that the accumulator can actually be altered.  If the accumulator cannot be a
 
 *5. What changes are necessary to the PRISM datapath to add another instruction (SUBI, which would subtract an immediate value from the accumulator) to the instruction set?*
 
-The ALU would have to be altered first to contain a SUBI command.  This would actually be pretty easy.  Just take the two's compliment of whatever is coming off of the data bus and make it the 8th command on the multiplexer on the ALU, since there are only seven commands there anyway.  Then opSel, and what controls it would have to be changed to be able to choose the SUBI command when desired.  
+The ALU would have to be altered first to contain a SUBI command.  This would actually be pretty easy.  Just take the two's compliment of whatever is coming off of the data bus and make it the 8th command on the multiplexer on the ALU, since there are only seven commands there anyway.  There are only 7 commands because command 5, IN, and 7, LOAD, actually do the exact same thing.  They just take what is one the databus and put in into the accumulator.  One of those can just be removed and replaced with the SUBI.  Or, if the user would like to keep both of these functions, another bit could be added to the number of options in the multiplexer and to the opSel.  Then opSel, and what controls it would have to be changed to be able to choose the SUBI command when desired.
+
+Also, another bit would have to be added to the IR, so that the SUBI function could be used directly in the assembly code.   Otherwise, there would be no way to choose this instuction from assembly code, since there is a specific command for each of the numbers in the list of the 4 bit long assembly commands.  Then, the IR registar would have to have 5 flip-flops so that 5 bits of instruction memory could be stored there.  
 
 
 
